@@ -1,4 +1,4 @@
-# Realm-Test
+# Realm Experiment
 ## Goal
 - Consume 2 JSON files when the app starts for the first time
 - Insert the data from those files into the Realm
