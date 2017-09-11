@@ -1,0 +1,36 @@
+{
+  "Title": "Mad Max",
+  "Year": "1979",
+  "Rated": "R",
+  "Released": "21 Mar 1980",
+  "Runtime": "88 min",
+  "Genre": "Action, Adventure, Sci-Fi",
+  "Director": "George Miller",
+  "Writer": "James McCausland (screenplay), George Miller (screenplay), George Miller (original story), Byron Kennedy (original story)",
+  "Actors": "Mel Gibson, Joanne Samuel, Hugh Keays-Byrne, Steve Bisley",
+  "Plot": "In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang.",
+  "Language": "English",
+  "Country": "Australia",
+  "Awards": "4 wins & 7 nominations.",
+  "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM4Mjg5ODEzMV5BMl5BanBnXkFtZTcwMDc3NDk0NA@@._V1_SX300.jpg",
+  "Ratings": [{
+    "Source": "Internet Movie Database",
+    "Value": "7.0/10"
+  }, {
+    "Source": "Rotten Tomatoes",
+    "Value": "90%"
+  }, {
+    "Source": "Metacritic",
+    "Value": "67/100"
+  }],
+  "Metascore": "67",
+  "imdbRating": "7.0",
+  "imdbVotes": "162,876",
+  "imdbID": "tt0079501",
+  "Type": "movie",
+  "DVD": "19 Nov 1997",
+  "BoxOffice": "N/A",
+  "Production": "s",
+  "Website": "N/A",
+  "Response": "True"
+}

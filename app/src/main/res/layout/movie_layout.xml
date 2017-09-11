@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="io.kimo.realm.ui.movie.MovieContract.ViewModel"/>
+        <variable
+            name="presenter"
+            type="io.kimo.realm.ui.movie.MovieContract.Presenter"/>
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="@{viewModel.state == viewModel.STATE_NORMAL}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cover"
+                    android:scaleType="centerCrop"
+                    android:background="#808080"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp" />
+
+                <TextView
+                    android:text="@{viewModel.title}"
+                    tools:text="Lord of the Rings"
+                    android:ellipsize="end"
+                    android:textSize="28sp"
+                    style="@style/MovieField"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:text="@string/genre"
+                    style="@style/MovieField.Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{viewModel.genre}"
+                    tools:text="Fantasy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MovieField.Value"/>
+
+                <TextView
+                    android:text="@string/director"
+                    style="@style/MovieField.Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{viewModel.director}"
+                    tools:text="Peter Jackson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MovieField.Value"/>
+
+                <TextView
+                    android:text="@string/actors"
+                    style="@style/MovieField.Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{viewModel.actors}"
+                    tools:text="Names of the actors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MovieField.Value"/>
+
+                <TextView
+                    android:text="@string/plot"
+                    style="@style/MovieField.Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@{viewModel.plot}"
+                    tools:text="One ring to rule them all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MovieField.Value"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            tools:visibility="gone"
+            android:id="@+id/loading_view"
+            android:visibility="@{viewModel.state == viewModel.STATE_LOADING}"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="@string/loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:indeterminate="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

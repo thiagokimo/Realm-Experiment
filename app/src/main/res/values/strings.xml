@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Realm Test</string>
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+    <string name="title">Title</string>
+    <string name="plot">Plot</string>
+    <string name="genre">Genre</string>
+    <string name="director">Director</string>
+    <string name="actors">Actors</string>
+    <string name="list">List</string>
+    <string name="movie">Movie</string>
+    <string name="clear">Clear</string>
+</resources>
