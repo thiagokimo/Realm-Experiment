@@ -14,7 +14,7 @@ The second file is an array with 100 objects, each of contains random generated 
 The app has only 1 main screen, with a view-pager. Each of them has a loading and a normal state. While the data is processed
 in the background, the user can swipe the view-pager until each page's data is fully loaded.
 
-**OBS:** On top of the data processing there's an delay of **5 seconds** for the first page (movie) and **10 seconds** for the
+**OBS:** On top of the data processing there's a delay of **5 seconds** for the first page (movie) and **10 seconds** for the
 second page (list).
 
 ### Dependency Injection
